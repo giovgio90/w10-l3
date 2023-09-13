@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { Col, Spinner } from "react-bootstrap";
+import { Button, Col, Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class GridFilm extends Component {
   state = {
@@ -49,6 +50,15 @@ class GridFilm extends Component {
     return movies.map((movie, index) => (
       <Col key={index} xs={12} sm={6} md={4} lg={2}>
         <img src={movie.Poster} alt="film1" style={{ width: "100%" }} />
+        <div className="text-center">
+          <Link to="/movie-details">
+            <Link to={`/movie-details/${movie.imdbID}`}>
+              <Button variant="dark" className="mt-3">
+                Dettagli film
+              </Button>
+            </Link>
+          </Link>
+        </div>
       </Col>
     ));
   }

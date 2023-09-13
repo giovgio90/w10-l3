@@ -1,7 +1,10 @@
 import { Navbar, Container, Nav, Dropdown } from "react-bootstrap";
 import { FaSearch, FaBell } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
-const MyNav = () => {
+const MyNav = (props) => {
+  const location = useLocation();
+  console.log(location);
   return (
     <Navbar variant="dark" expand="lg" className="mb-4 p-0">
       <Container>
@@ -17,9 +20,9 @@ const MyNav = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link active className="fw-bold" href="#">
+              <Link className={`nav-link ${location.pathname === "/tv-shows" ? "active fw-bold" : ""}`} to="/tv-shows">
                 Tv Shows
-              </Nav.Link>
+              </Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link active className="text-white-50" href="#">

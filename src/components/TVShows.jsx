@@ -1,7 +1,7 @@
 import { Container, Row } from "react-bootstrap";
 import GridFilm from "./GridFilm";
 
-const Main = () => {
+const TVShows = () => {
   return (
     <Container className=" mb-1 mb-sm-2 mb-md-4 mb-lg-5" style={{ marginBottom: "100px" }}>
       <h2 className="fs-4 text-white mb-3">Harry Potter Saga</h2>
@@ -22,4 +22,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default TVShows;
