@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 const MovieDetails = () => {
   const { movieId } = useParams();
+
   const [movieDetails, setMovieDetails] = useState(null);
   const [comments, setComments] = useState([]);
 
@@ -64,9 +65,9 @@ const MovieDetails = () => {
             <strong>Commenti:</strong>
           </p>
 
-          <ul>
-            {comments.map((comment) => (
-              <div className="text-center">
+          <ul style={{ listStyleType: "none" }}>
+            {comments.map((comment, index) => (
+              <div key={index} className="text-center">
                 <li>{comment.comment}</li>
                 <li>
                   <strong>rate: </strong>

@@ -51,12 +51,10 @@ class GridFilm extends Component {
       <Col key={index} xs={12} sm={6} md={4} lg={2}>
         <img src={movie.Poster} alt="film1" style={{ width: "100%" }} />
         <div className="text-center">
-          <Link to="/movie-details">
-            <Link to={`/movie-details/${movie.imdbID}`}>
-              <Button variant="dark" className="mt-3">
-                Dettagli film
-              </Button>
-            </Link>
+          <Link to={`/movie-details/${movie.imdbID}`}>
+            <Button variant="dark" className="mt-3">
+              Dettagli film
+            </Button>
           </Link>
         </div>
       </Col>
