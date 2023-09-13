@@ -1,0 +1,82 @@
+:root {
+  --mx-lg-6: 200px;
+}
+
+body {
+  background-color: #141414;
+}
+
+nav img {
+  width: 80px;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.user img {
+  width: 23px;
+}
+
+.user h5 {
+  font-size: 0.8rem;
+}
+
+.user > li {
+  list-style: none;
+}
+
+.dropdown-menu {
+  background-color: #141414;
+  font-size: 0.9rem;
+}
+
+.films {
+  margin-bottom: 100px;
+}
+
+.films img {
+  width: 100%;
+}
+
+.new-episodes h4 {
+  font-size: 0.6rem;
+}
+
+.social-info h6 {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.social-info {
+  margin-inline: 200px;
+}
+
+.social-info button {
+  background-color: #141414;
+  font-size: 0.7rem;
+}
+
+.end-page h6 {
+  font-size: 0.6rem;
+}
+
+.user div ion-icon {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.social ion-icon {
+  color: grey;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  .social-info {
+    margin-inline: 200px;
+  }
+}
